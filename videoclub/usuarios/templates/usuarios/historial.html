@@ -1,0 +1,6 @@
+<h1>Historial de Alquiler</h1>
+<ul>
+    {% for item in historial %}
+        <li>{{ item.pelicula.titulo }} - Alquilado el {{ item.fecha_alquiler }}{% if item.fecha_devolucion %} - Devuelto el {{ item.fecha_devolucion }}{% endif %}</li>
+    {% endfor %}
+</ul>

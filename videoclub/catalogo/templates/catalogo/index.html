@@ -1,0 +1,6 @@
+<h1>Películas Disponibles</h1>
+<ul>
+    {% for pelicula in peliculas %}
+        <li>{{ pelicula.titulo }} ({{ pelicula.año }})</li>
+    {% endfor %}
+</ul>
